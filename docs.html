@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Docs • Product Manager Portfolio</title>
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="index.html" class="brand-title">
+          product-lb <span>• Product Portfolio</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Case Study</a>
+          <a href="docs.html" class="active">Product Docs</a>
+          <a href="roadmap.html">Scope & Timeline</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero-box">
+        <span class="hero-badge">Product Artifacts & Governance</span>
+        <h1>Product Documentation Suite</h1>
+        <p>
+          Practical product management documents authored to define the vision,
+          business justification, functional requirements, and technical
+          architecture behind the Product Lifecycle Simulation.
+        </p>
+      </section>
+
+      <!-- Document 1: Business Case -->
+      <section class="card">
+        <h2>1. Business Case</h2>
+        <h3>Executive Summary</h3>
+        <p>
+          Onboarding junior Product Managers, Business Analysts, and delivery
+          leads onto structured governance frameworks (RACI, BABOK, PMBOK, and
+          Agile Scrum) typically relies on passive slide decks. This leads to
+          role confusion during real projects and missed stage gates.
+        </p>
+        <h3>Objectives & Value</h3>
+        <ul>
+          <li>
+            <strong>Faster Role Clarity:</strong> Help practitioners practise
+            assigning Responsible (R), Accountable (A), Consulted (C), and
+            Informed (I) roles across 10 standard delivery phases.
+          </li>
+          <li>
+            <strong>Zero-Cost Delivery:</strong> Build as a lightweight static
+            web app requiring no backend servers, databases, or user accounts.
+          </li>
+          <li>
+            <strong>Portfolio Demonstration:</strong> Showcase end-to-end
+            product thinking from initial concept through to live deployment.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Document 2: BRD -->
+      <section class="card">
+        <h2>2. Business Requirements Document (BRD)</h2>
+        <h3>Core Functional Requirements</h3>
+        <ul>
+          <li>
+            <strong>FR-01 Sequential Stage Progression:</strong> Users must
+            complete stages 1 to 10 in order. Locked future stages must display
+            a clear warning if clicked early.
+          </li>
+          <li>
+            <strong>FR-02 RACI Validation Engine:</strong> Each phase must
+            evaluate 7 stakeholder roles (Product, SLT, Sponsor, UX/CX, Dev,
+            Legal, Risk) against an expected governance matrix.
+          </li>
+          <li>
+            <strong>FR-03 Deliverable Alignment:</strong> Users must match the
+            correct framework artifact block to the active stage via
+            drag-and-drop before unlocking the phase output.
+          </li>
+          <li>
+            <strong>FR-04 Artifact Preview & Sign-Off:</strong> Once RACI and
+            framework checks pass, the system must unlock the stage's formatted
+            deliverable document and allow advancement.
+          </li>
+          <li>
+            <strong>FR-05 Guided Onboarding Tour:</strong> First-time visitors
+            must receive a step-by-step walkthrough modal, with an option to
+            reopen it anytime from the header.
+          </li>
+        </ul>
+      </section>
+
+      <!-- Document 3: Business Analysis -->
+      <section class="card">
+        <h2>3. Business Analysis Summary (BABOK Aligned)</h2>
+        <h3>Target User Personas</h3>
+        <ul>
+          <li>
+            <strong>Aspiring & Junior PMs:</strong> Seeking practical hands-on
+            repetition to internalise governance ownership across discovery,
+            build, and launch phases.
+          </li>
+          <li>
+            <strong>Hiring Managers & Recruiters:</strong> Reviewing the tool to
+            evaluate structured product thinking, domain knowledge, and
+            execution clarity.
+          </li>
+        </ul>
+        <h3>Gap & Workflow Analysis</h3>
+        <p>
+          Traditional RACI spreadsheets show a static grid all at once, which
+          overwhelms learners. Breaking the matrix into 10 isolated stage gates
+          with contextual hints reduces cognitive load and reinforces why
+          ownership shifts between Product, Engineering, Legal, and Sponsors at
+          each milestone.
+        </p>
+      </section>
+
+      <!-- Document 4: Technical Brief -->
+      <section class="card">
+        <h2>4. Technical Brief</h2>
+        <h3>Architecture Overview</h3>
+        <ul>
+          <li>
+            <strong>Frontend Stack:</strong> Built with React and Vite for fast
+            local development and lightweight static bundle generation.
+          </li>
+          <li>
+            <strong>Data-Driven Phase Engine:</strong> All 10 stages, RACI
+            rules, hints, and artifact templates are decoupled into a single
+            configuration object (<code>metrics.js</code>), making content
+            updates possible without touching UI logic.
+          </li>
+          <li>
+            <strong>Client-Side State Persistence:</strong> Uses browser
+            <code>localStorage</code> to save active stage, unlocked progress,
+            and tour completion state with zero backend overhead.
+          </li>
+          <li>
+            <strong>Hosting:</strong> Deployed as static assets via GitHub Pages
+            for high availability and zero ongoing hosting costs.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 product-lb • Product Management Portfolio</p>
+    </footer>
+  </body>
+</html>

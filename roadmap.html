@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope & Timeline • Product Manager Portfolio</title>
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Clean Visual Gantt Chart Styles */
+      .gantt-wrap {
+        overflow-x: auto;
+        margin-top: 16px;
+      }
+      .gantt-table {
+        width: 100%;
+        min-width: 680px;
+        border-collapse: collapse;
+        font-size: 13px;
+      }
+      .gantt-table th {
+        background-color: var(--blue-executive);
+        color: #ffffff;
+        font-weight: 500;
+        padding: 10px 8px;
+        text-align: center;
+        border: 1px solid #2c3e66;
+      }
+      .gantt-table th:first-child {
+        text-align: left;
+        padding-left: 14px;
+        width: 240px;
+      }
+      .gantt-table td {
+        padding: 10px 8px;
+        border: 1px solid var(--border-light);
+        vertical-align: middle;
+      }
+      .gantt-table td:first-child {
+        font-weight: 400;
+        color: var(--blue-deep);
+        padding-left: 14px;
+        background-color: #faf9f6;
+      }
+      .gantt-bar {
+        height: 16px;
+        border-radius: 4px;
+        background-color: var(--blue-executive);
+      }
+      .gantt-bar.gold {
+        background-color: var(--gold-accent);
+      }
+      .gantt-bar.green {
+        background-color: var(--success-green);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a href="index.html" class="brand-title">
+          product-lb <span>• Product Portfolio</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Case Study</a>
+          <a href="docs.html">Product Docs</a>
+          <a href="roadmap.html" class="active">Scope & Timeline</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero-box">
+        <span class="hero-badge">Delivery Governance & Execution</span>
+        <h1>Project Scope & Gantt Timeline</h1>
+        <p>
+          Clear scope boundaries and an 8-week delivery schedule demonstrating
+          how the simulation progressed from initial concept through MVP build,
+          usability improvements, and portfolio release.
+        </p>
+      </section>
+
+      <!-- Scope Document -->
+      <div class="grid-2">
+        <section class="card">
+          <h2>In Scope (MVP & v1.1 Release)</h2>
+          <ul>
+            <li>
+              <strong>10-Stage Lifecycle Highway:</strong> Interactive SVG
+              progress map from Concept to Feature Expansion.
+            </li>
+            <li>
+              <strong>RACI Alignment Matrix:</strong> Live validation across 7
+              core product and governance stakeholders per stage.
+            </li>
+            <li>
+              <strong>Framework Deliverable Matching:</strong> Drag-and-drop
+              validation tying BABOK, PMBOK, and Scrum artifacts to phases.
+            </li>
+            <li>
+              <strong>Guided Onboarding Tour:</strong> First-time user modal
+              walkthrough and persistent header help button.
+            </li>
+            <li>
+              <strong>Local Progress Persistence:</strong> Browser storage so
+              players can resume sessions without authentication.
+            </li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Out of Scope (Deferred to v2.0)</h2>
+          <ul>
+            <li>
+              <strong>User Accounts & Cloud Sync:</strong> Excluded to keep
+              barrier to entry zero and avoid backend database costs.
+            </li>
+            <li>
+              <strong>Multiplayer Leaderboards:</strong> Not aligned with the
+              core self-paced learning objective for v1.
+            </li>
+            <li>
+              <strong>Custom Scenario Builder:</strong> Deferred until user
+              feedback confirms demand for industry-specific templates.
+            </li>
+            <li>
+              <strong>PDF Export Engine:</strong> Replaced with clean monospace
+              text artifact previews for lightweight browser performance.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Visual Gantt Chart -->
+      <section class="card">
+        <h2>Project Delivery Gantt Chart (8-Week Roadmap)</h2>
+        <p>
+          Phased execution timeline balancing upfront discovery and governance
+          design with iterative front-end development and UX polish.
+        </p>
+
+        <div class="gantt-wrap">
+          <table class="gantt-table">
+            <thead>
+              <tr>
+                <th>Workstream / Milestone</th>
+                <th>W1</th>
+                <th>W2</th>
+                <th>W3</th>
+                <th>W4</th>
+                <th>W5</th>
+                <th>W6</th>
+                <th>W7</th>
+                <th>W8</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Concept & Business Case</td>
+                <td colspan="2"><div class="gantt-bar"></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2. BRD & 10-Stage RACI Mapping</td>
+                <td></td>
+                <td colspan="2"><div class="gantt-bar"></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3. Wireframes & SVG Highway UI</td>
+                <td></td>
+                <td></td>
+                <td colspan="2"><div class="gantt-bar gold"></div></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4. Core React Engine & Validation</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="3"><div class="gantt-bar gold"></div></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5. UAT, Bug Fixes & Guided Tour</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2"><div class="gantt-bar green"></div></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>6. GitHub Pages Launch & Portfolio</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="2"><div class="gantt-bar green"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 product-lb • Product Management Portfolio</p>
+    </footer>
+  </body>
+</html>
