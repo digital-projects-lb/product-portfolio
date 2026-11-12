@@ -7,7 +7,7 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1b3d' stroke='%23d4af37' stroke-width='4'/%3E%3Cpath d='M16 44 C26 44 26 20 38 20 L48 20' fill='none' stroke='%23d4af37' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='44' r='5' fill='%23d4af37'/%3E%3Ccircle cx='48' cy='20' r='5' fill='%23ffffff'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233e2f26' stroke='%23cbb26a' stroke-width='4'/%3E%3Cpath d='M16 44 C26 44 26 20 38 20 L48 20' fill='none' stroke='%23cbb26a' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='44' r='5' fill='%23cbb26a'/%3E%3Ccircle cx='48' cy='20' r='5' fill='%23ffffff'/%3E%3C/svg%3E"
     />
     <link rel="preconnect" href="https://googleapis.com" />
     <link rel="preconnect" href="https://gstatic.com" crossorigin />
@@ -29,12 +29,12 @@
         font-size: 13px;
       }
       .gantt-table th {
-        background-color: var(--blue-primary);
-        color: #ffffff;
-        font-weight: 500;
+        background-color: var(--cappuccino-soft);
+        color: var(--espresso-primary);
+        font-weight: 600;
         padding: 10px 8px;
         text-align: center;
-        border: 1px solid #2c3e66;
+        border: 1px solid #e2d5c7;
       }
       .gantt-table th:first-child {
         text-align: left;
@@ -47,21 +47,21 @@
         vertical-align: middle;
       }
       .gantt-table td:first-child {
-        font-weight: 400;
-        color: var(--blue-deep);
+        font-weight: 500;
+        color: var(--espresso-primary);
         padding-left: 14px;
-        background-color: #faf9f6;
+        background-color: var(--cream-canvas);
       }
       .gantt-bar {
         height: 16px;
-        border-radius: 4px;
-        background-color: var(--blue-primary);
+        border-radius: 999px;
+        background-color: #c8a98e;
       }
       .gantt-bar.gold {
         background-color: var(--gold-accent);
       }
       .gantt-bar.green {
-        background-color: var(--success-green);
+        background-color: #cfa07a;
       }
     </style>
   </head>
@@ -81,61 +81,61 @@
 
     <main class="container">
       <section class="hero-box">
-        <span class="hero-badge">Delivery Governance & Execution</span>
+        <span class="hero-badge">Project Scope & Delivery Plan</span>
         <h1>Project Scope & Gantt Timeline</h1>
         <p>
-          Clear scope boundaries and an 8-week delivery schedule demonstrating
-          how the simulation progressed from initial concept through MVP build,
-          usability improvements, and portfolio release.
+          Clear scope boundaries and an 8-week delivery schedule showing how
+          Product Path progressed from initial concept through interactive
+          build, usability refinements, and portfolio launch.
         </p>
       </section>
 
       <!-- Scope Document -->
       <div class="grid-2">
         <section class="card">
-          <h2>In Scope (MVP & v1.1 Release)</h2>
+          <h2>In Scope (v1.0 & v1.1 Release)</h2>
           <ul>
             <li>
-              <strong>10-Stage Lifecycle Highway:</strong> Interactive SVG
-              progress map from Concept to Feature Expansion.
+              <strong>10-Stage Product Road:</strong> Interactive SVG progress
+              map from Concept through Post-Launch.
             </li>
             <li>
-              <strong>RACI Alignment Matrix:</strong> Live validation across 7
-              core product and governance stakeholders per stage.
+              <strong>Team Roles Matrix (RACI):</strong> Live validation across
+              7 core product and delivery stakeholders per stage.
             </li>
             <li>
-              <strong>Framework Deliverable Matching:</strong> Drag-and-drop
-              validation tying BABOK, PMBOK, and Scrum artifacts to phases.
+              <strong>Deliverable Matching:</strong> Drag-and-drop pills linking
+              practical product deliverables to each stage.
             </li>
             <li>
-              <strong>Guided Onboarding Tour:</strong> First-time user modal
-              walkthrough and persistent header help button.
+              <strong>Working Templates & PDF Export:</strong> Fill-in-the-blank
+              product templates with one-click styled PDF printouts.
             </li>
             <li>
-              <strong>Local Progress Persistence:</strong> Browser storage so
-              players can resume sessions without authentication.
+              <strong>Guided Tour & Auto-Save:</strong> First-time user
+              walkthrough and browser storage so players can resume anytime.
             </li>
           </ul>
         </section>
 
         <section class="card">
-          <h2>Out of Scope (Deferred to v2.0)</h2>
+          <h2>Out of Scope (Planned for v2.0)</h2>
           <ul>
             <li>
-              <strong>User Accounts & Cloud Sync:</strong> Excluded to keep
-              barrier to entry zero and avoid backend database costs.
+              <strong>User Accounts & Cloud Sync:</strong> Excluded in v1 to
+              keep access instant with zero login friction.
             </li>
             <li>
-              <strong>Multiplayer Leaderboards:</strong> Not aligned with the
-              core self-paced learning objective for v1.
+              <strong>Custom User-Editable Inputs:</strong> Allowing teams to
+              type directly into templates before printing is slated for v2.0.
             </li>
             <li>
-              <strong>Custom Scenario Builder:</strong> Deferred until user
-              feedback confirms demand for industry-specific templates.
+              <strong>Vertical Split-Screen Layout:</strong> A side-by-side
+              vertical road view is planned for the next release.
             </li>
             <li>
-              <strong>PDF Export Engine:</strong> Replaced with clean monospace
-              text artifact previews for lightweight browser performance.
+              <strong>Team Leaderboards:</strong> Deferred to keep v1 focused on
+              self-paced learning and day-to-day reference.
             </li>
           </ul>
         </section>
@@ -145,8 +145,8 @@
       <section class="card">
         <h2>Project Delivery Gantt Chart (8-Week Roadmap)</h2>
         <p>
-          Phased execution timeline balancing upfront discovery and governance
-          design with iterative front-end development and UX polish.
+          Phased delivery timeline balancing upfront discovery and role mapping
+          with iterative front-end development and UX/CX polish.
         </p>
 
         <div class="gantt-wrap">
@@ -186,7 +186,7 @@
                 <td></td>
               </tr>
               <tr>
-                <td>3. Wireframes & SVG Highway UI</td>
+                <td>3. Wireframes & Interactive Road UI</td>
                 <td></td>
                 <td></td>
                 <td colspan="2"><div class="gantt-bar gold"></div></td>

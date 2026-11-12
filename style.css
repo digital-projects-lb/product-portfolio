@@ -1,13 +1,15 @@
 :root {
-  --blue-primary: #1e2e4f;
-  --blue-deep: #0b1b3d;
-  --gold-accent: #d4af37;
-  --cream-canvas: #faf9f6;
+  --espresso-primary: #3e2f26;
+  --espresso-deep: #2c211b;
+  --gold-accent: #cbb26a;
+  --gold-text: #7c6527;
+  --cream-canvas: #faf8f5;
+  --cappuccino-soft: #f3ece4;
+  --parchment-soft: #f9f5e3;
   --white-card: #ffffff;
-  --border-light: #e5e7eb;
-  --text-primary: #2c3e50;
-  --text-muted: #64748b;
-  --success-green: #27ae60;
+  --border-light: #ece5dd;
+  --text-primary: #3e2f26;
+  --text-muted: #8c7a6b;
 }
 
 * {
@@ -32,8 +34,8 @@ body {
 
 /* Top Navigation */
 .site-header {
-  background-color: var(--blue-primary);
-  color: #ffffff;
+  background-color: var(--cream-canvas);
+  color: var(--espresso-primary);
   border-bottom: 3px solid var(--gold-accent);
   padding: 18px 24px;
 }
@@ -51,12 +53,12 @@ body {
 .brand-title {
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff;
+  color: var(--espresso-primary);
   text-decoration: none;
 }
 
 .brand-title span {
-  color: var(--gold-accent);
+  color: var(--gold-text);
   font-weight: 600;
 }
 
@@ -66,7 +68,7 @@ body {
 }
 
 .nav-links a {
-  color: #cbd5e1;
+  color: var(--text-muted);
   text-decoration: none;
   font-size: 13px;
   font-weight: 400;
@@ -77,9 +79,9 @@ body {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #ffffff;
+  color: var(--espresso-primary);
   border-bottom-color: var(--gold-accent);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Layout Container */
@@ -91,20 +93,23 @@ body {
 
 /* Hero Section */
 .hero-box {
-  background-color: var(--blue-deep);
-  color: #ffffff;
+  background-color: var(--cappuccino-soft);
+  border: 1px solid #e2d5c7;
+  border-left: 5px solid var(--gold-accent);
+  color: var(--espresso-primary);
   padding: 40px 36px;
   border-radius: 12px;
   margin-bottom: 28px;
-  box-shadow: 0 8px 24px rgba(11, 27, 61, 0.08);
+  box-shadow: 0 6px 20px rgba(62, 47, 38, 0.04);
 }
 
 .hero-badge {
   display: inline-block;
+  background-color: var(--parchment-soft);
   border: 1px solid var(--gold-accent);
-  color: var(--gold-accent);
+  color: var(--gold-text);
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 4px 14px;
   border-radius: 20px;
@@ -114,48 +119,57 @@ body {
 .hero-box h1 {
   font-size: 28px;
   font-weight: 400;
+  color: var(--espresso-deep);
   margin-bottom: 14px;
   line-height: 1.35;
 }
 
 .hero-box p {
-  color: #cbd5e1;
+  color: var(--espresso-primary);
   font-size: 15px;
   max-width: 720px;
+  margin-bottom: 18px;
+}
+
+.hero-box p:last-of-type {
   margin-bottom: 26px;
 }
 
 /* Buttons */
 .btn-gold {
   display: inline-block;
-  background-color: var(--gold-accent);
-  color: var(--blue-deep);
+  background-color: var(--parchment-soft);
+  border: 1.5px solid var(--gold-accent);
+  color: var(--espresso-primary);
   font-weight: 600;
   font-size: 13px;
-  padding: 12px 24px;
+  padding: 11px 24px;
   border-radius: 6px;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: all 0.2s;
 }
 
 .btn-gold:hover {
-  opacity: 0.9;
+  background-color: #f3e9c6;
 }
 
 .btn-outline {
   display: inline-block;
-  border: 1px solid #94a3b8;
-  color: #ffffff;
-  font-weight: 400;
+  background-color: var(--white-card);
+  border: 1px solid #d5c7b8;
+  color: var(--espresso-primary);
+  font-weight: 500;
   font-size: 13px;
   padding: 11px 22px;
   border-radius: 6px;
   text-decoration: none;
   margin-left: 12px;
+  transition: all 0.2s;
 }
 
 .btn-outline:hover {
-  border-color: #ffffff;
+  border-color: var(--gold-accent);
+  background-color: var(--cream-canvas);
 }
 
 /* Cards & Grids */
@@ -165,13 +179,13 @@ body {
   border-radius: 10px;
   padding: 28px 32px;
   margin-bottom: 24px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 6px rgba(62, 47, 38, 0.02);
 }
 
 .card h2 {
   font-size: 18px;
   font-weight: 500;
-  color: var(--blue-deep);
+  color: var(--espresso-primary);
   margin-bottom: 14px;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--border-light);
@@ -179,8 +193,8 @@ body {
 
 .card h3 {
   font-size: 15px;
-  font-weight: 500;
-  color: var(--blue-primary);
+  font-weight: 600;
+  color: var(--espresso-primary);
   margin: 18px 0 6px 0;
 }
 
