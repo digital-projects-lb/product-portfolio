@@ -13,9 +13,9 @@ const PROJECTS = [
     ],
     summary:
       "A browser-based simulation navigating Digital Product Managers and cross-functional teams through the 10-stage product lifecycle path, complete with RACI role checks and exportable working templates.",
-    liveUrl: "https://github.io",
+    liveUrl: "https://digital-projects-lb.github.io/product-game/",
     liveLabel: "Launch Live Build ↗",
-    repoUrl: "https://github.com",
+    repoUrl: "https://github.com/digital-projects-lb/product-game",
     headerVisual: "venn",
     okr: {
       objective: "Accelerate cross-functional RACI & stage-gate alignment",
@@ -134,9 +134,9 @@ const PROJECTS = [
     ],
     summary:
       "An automated desktop cooling system built on Arduino Uno using DHT11 thermal sensing, ultrasonic desk proximity detection, RGB status feedback, and dual servo actuation—compiled and deployed via Arduino CLI.",
-    liveUrl: "https://github.com",
+    liveUrl: "https://github.com/digital-projects-lb/smart-desk-fan-arduino",
     liveLabel: "View Repo & Demo Video ↗",
-    repoUrl: "https://github.com",
+    repoUrl: "https://github.com/digital-projects-lb/smart-desk-fan-arduino",
     headerVisual: "svg-fan",
     okr: {
       objective:
@@ -282,9 +282,9 @@ const PROJECTS = [
     ],
     summary:
       "A structured interactive platform introducing robotics, automation, and hands-on hardware builds through guided modules and step-by-step practical exercises.",
-    liveUrl: "https://github.io",
+    liveUrl: "https://digital-projects-lb.github.io/railway-robotics-academy/",
     liveLabel: "Launch Live Build ↗",
-    repoUrl: "https://github.com",
+    repoUrl: "https://github.com/digital-projects-lb/railway-robotics-academy",
     headerVisual: "svg-railway",
     okr: {
       objective:
@@ -380,9 +380,9 @@ const PROJECTS = [
     ],
     summary:
       "A browser-based maritime adventure and hidden-object web game designed around intuitive player onboarding, progressive discovery, and clean customer experience (CX).",
-    liveUrl: "https://github.io",
+    liveUrl: "https://digital-projects-lb.github.io/ship-a-long/",
     liveLabel: "Launch Live Build ↗",
-    repoUrl: "https://github.com",
+    repoUrl: "https://github.com/digital-projects-lb/ship-a-long",
     headerVisual: "svg-ship",
     okr: {
       objective:
