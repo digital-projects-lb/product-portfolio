@@ -472,6 +472,12 @@ const PROJECTS = [
 let selectedId = PROJECTS.at(0).id;
 let activeTab = "overview";
 
+function trackPortfolioEvent(eventName, params) {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, params);
+  }
+}
+
 function renderSidebar() {
   const sidebar = document.getElementById("sidebar-list");
   sidebar.innerHTML = PROJECTS.map((project) => {
@@ -496,6 +502,13 @@ function renderSidebar() {
     btn.addEventListener("click", () => {
       selectedId = btn.dataset.id;
       activeTab = "overview";
+
+      const chosen = PROJECTS.find((p) => p.id === selectedId);
+      trackPortfolioEvent("select_case_study", {
+        project_id: selectedId,
+        project_title: chosen ? chosen.title : selectedId,
+      });
+
       render();
     });
   });
@@ -789,7 +802,25 @@ function renderDetail() {
   panel.querySelectorAll(".subtab-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       activeTab = btn.dataset.tab;
+
+      trackPortfolioEvent("view_case_study_tab", {
+        project_id: project.id,
+        project_title: project.title,
+        tab_name: activeTab,
+      });
+
       renderDetail();
+    });
+  });
+
+  panel.querySelectorAll(".detail-actions a").forEach((link) => {
+    link.addEventListener("click", () => {
+      trackPortfolioEvent("click_project_link", {
+        project_id: project.id,
+        project_title: project.title,
+        link_label: link.textContent.trim(),
+        destination_url: link.href,
+      });
     });
   });
 }
